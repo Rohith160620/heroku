@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.light {
+  --mainColor: #1acaea;
+  --hoverColor: #5bacdf;
+  --backgroundColor: #fdfdfd;
+  --darkOne: #312f3a;
+  --darkTwo: #072126;
+  --mailOne: #B3EEF8;
+  
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.big-page {
+  position: relative;
+  padding: 1.7rem 0 2rem;
+  margin-top: 60px;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  position: relative;
+  max-width: 82rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+  z-index: 10;
+}
+
+.showcase-area .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.big-title {
+  font-size: 1.4rem;
+  color: var(--mainColor);
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.left-title{
+  font-family: Segoe UI;
+font-style: normal;
+font-weight: 600;
+font-size:25.3333px;
+line-height: 55px;
+}
+
+.ze-title{
+  margin-bottom: 21px;
+  margin-top: -16px;
+  font-weight: 600;
+}
+
+.left-main{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 100%;
+letter-spacing: 0.02em;
+}
+
+.left-main1{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 800;
+font-size: 140px;
+line-height: 100%;
+width: 120%;
+letter-spacing: 0.02em;
+}
+
+.text {
+  color: var(--darkTwo);
+  font-size: 18px;
+  font-family: Poppins;
+  margin: 1.9rem 0 2.5rem;
+  letter-spacing: 0.01em;
+  max-width: 580px;
+  line-height: 180%;
+}
+
+.links{
+  margin-bottom: 20px;
+  margin-left: -73px;
+}
+
+.links a {
+  color: var(--darkTwo);
+  margin-left: 4.5rem;
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 147.19%;
+letter-spacing: 0.02em;
+}
+
+.links a:hover {
+  color: var(--hoverColor);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px;
+  color: #fff !important;
+  background-color: var(--darkTwo);
+  border-radius: 8px;
+  margin-left: -20px;
+  margin-top: 28px;
+  width: 156px;
+  height: 48px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--darkOne);
+  transform: scale(1) !important;
+}
+
+.box-field{
+  width: 76%;
+  height: 48px;
+  padding: 12px;
+  text-align: center;
+  background-color: var(--mailOne);
+  border: 1px solid var(--mailOne);
+  border-radius: 5px;
+}
+
+.log input[type=email]:focus {
+  outline: none;
+}
+::placeholder {
+  color:var(--darkTwo);
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 180%;
+}
+
+.canves {
+  position: absolute;
+width: 496px;
+height: 496px;
+left: 836px;
+top: 48px;
+}
+
+.icons{
+  width: auto;
+  margin-bottom: -6px;
+  margin-right: 8px;
+}
+
+
+/* footer */
+.bot{
+  text-align: end;
+    display: block;
+}
+
+@media screen and (max-width: 870px) {
+
+  .left-main1 {
+    font-size: 130px;
+}
+
+  .links {
+    width: 100%;
+    margin-left: -29px;
+    margin-top: -25px;
+  }
+
+  .links a {
+    color:(--darkOne);
+    margin-left: 0;
+    padding: 2rem 0;
+    float: left;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  }
+  .log{
+    margin-left: 9rem;
+  }
+
+  
+
+  .showcase-area {
+    padding: 2.5rem 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .showcase-area .container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-gap: 2rem;
+  }
+
+  .big-title {
+    font-size: 1.1rem;
+  }
+
+  .text {
+    font-size: 0.95rem;
+    margin: 1.4rem 0 1.5rem;
+  }
+
+  .person {
+    width: 100%;
+    transform: none;
+  }
+
+  .box-field{
+    width: 87%;
+    margin-left: -130px;
+  }
+
+  .icons{
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+
+  .canves {
+    position: inherit;
+    margin-left: 30px;
+}
+
+
+
+}
+
+
+
+@media screen and (max-width: 470px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .big-title {
+    font-size: 0.9rem;
+  }
+
+  .text {
+    margin: 1.1rem 0 1.5rem;
+  }
+
+  .log{
+    margin-left: 0px;
+  }
+
+  .links {
+    width: 100%;
+    margin-left: 17px;
+}
+
+.links a {
+  color: (--darkOne);
+  margin-left: 0;
+  padding: 0.3rem 0;
+  float: none;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.box-field{
+  width: 75%;
+    margin-left: -14px;
+}
+
+.btn{
+  width: 115px;
+  margin-left: -26px;
+}
+
+.left-title {
+  font-size: 18.3333px;
+}
+
+.left-main {
+  font-size: 65px;
+}
+
+.left-main1 {
+  font-size: 110px;
+}
+
+.canves {
+  position: inherit;
+  margin-left: -28px;
+  margin-right: -33px;
+  width: 371px;
+    height: 375px;
+}
+
+
+}
